@@ -3,33 +3,33 @@ package com.sparta.students2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Group extends ParentClass {
+public class Group {
 
-    List<ParentClass> groupStudents;
-    List<Double> results = new ArrayList<>();
+    String name;
+    List<Student> groupStudents;
+    List<Integer> results = new ArrayList<>();
+    groupStudents = new ArrayList<>();
 
     public Group(String name) {
-        super(name);
-        groupStudents = new ArrayList<>();
-        this.results = results;
+        this.name=name;
     }
 
-    public void addStudent(ParentClass student) {
+    public void addStudent(Student student) {
+
         groupStudents.add(student);
     }
 
-    public List<ParentClass> getGroupStudents() {
-        return groupStudents;
+    public void fillArray(){
     }
-
 
     public double calculateForGroup() {
         Double total = 0.0;
         Double sredniyBall = 0.0;
-        for (int i = 0; i< results.size();i++){
-            total +=results.get(i);
-            sredniyBall = total / results.size();}
-            System.out.println("Test" + sredniyBall);
+        for (int i = 0; i < results.size(); i++) {
+            total += results.get(i);
+            sredniyBall = total / results.size();
+        }
+        System.out.println("Test" + sredniyBall);
 
 
         return sredniyBall;

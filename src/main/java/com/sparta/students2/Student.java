@@ -3,17 +3,18 @@ package com.sparta.students2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Student extends ParentClass {
+public class Student{
 
-    List<Student> students = new ArrayList<>();
-    List<Integer> examResults = new ArrayList<>();
+    List<String> studentsNames = new ArrayList<>();
+    List<Double> examResults = new ArrayList<>();
 
-    public Student(String name, int ExamResult) {
-        super(name);
-        this.students = students;
+    public Student(String studentsNames, double examResults) {
+        this.studentsNames = studentsNames;
         this.examResults = examResults;
     }
-    public void calculateSredniyBal (){
 
+    public List<Integer> getExamResults() {
+
+        return examResults;
     }
 }

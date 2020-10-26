@@ -3,13 +3,12 @@ package com.sparta.students2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Facultet extends ParentClass {
+public class Facultet {
 
     List<Group> groups;
     List<Student> facultetSudents;
 
     public Facultet(String name) {
-        super(name);
         groups = new ArrayList<>();
     }
 
